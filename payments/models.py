@@ -53,43 +53,43 @@ class BasePayment(models.Model):
     '''
     Represents a single transaction. Each instance has one or more PaymentItem.
     '''
-    variant = models.CharField(max_length=255)
+    variant = models.CharField(max_length=255, verbose_name=_("variant"))
     #: Transaction status
     status = models.CharField(
-        max_length=10, choices=PAYMENT_STATUS_CHOICES, default='waiting')
+        max_length=10, choices=PAYMENT_STATUS_CHOICES, default='waiting', verbose_name=_("status"))
     fraud_status = models.CharField(
         _('fraud check'), max_length=10, choices=FRAUD_CHOICES,
         default='unknown')
-    fraud_message = models.TextField(blank=True, default='')
+    fraud_message = models.TextField(blank=True, default='', verbose_name=_("fraud message"))
     #: Creation date and time
     created = models.DateTimeField(auto_now_add=True)
     #: Date and time of last modification
     modified = models.DateTimeField(auto_now=True)
     #: Transaction ID (if applicable)
-    transaction_id = models.CharField(max_length=255, blank=True)
+    transaction_id = models.CharField(max_length=255, blank=True, verbose_name=_("transaction id"))
     #: Currency code (may be provider-specific)
-    currency = models.CharField(max_length=10)
+    currency = models.CharField(max_length=10, verbose_name=_("currency"))
     #: Total amount (gross)
-    total = models.DecimalField(max_digits=9, decimal_places=2, default='0.0')
+    total = models.DecimalField(max_digits=9, decimal_places=2, default='0.0', verbose_name=_("total"))
     delivery = models.DecimalField(
-        max_digits=9, decimal_places=2, default='0.0')
-    tax = models.DecimalField(max_digits=9, decimal_places=2, default='0.0')
-    description = models.TextField(blank=True, default='')
-    billing_first_name = models.CharField(max_length=256, blank=True)
-    billing_last_name = models.CharField(max_length=256, blank=True)
-    billing_address_1 = models.CharField(max_length=256, blank=True)
-    billing_address_2 = models.CharField(max_length=256, blank=True)
-    billing_city = models.CharField(max_length=256, blank=True)
-    billing_postcode = models.CharField(max_length=256, blank=True)
-    billing_country_code = models.CharField(max_length=2, blank=True)
-    billing_country_area = models.CharField(max_length=256, blank=True)
-    billing_email = models.EmailField(blank=True)
-    customer_ip_address = models.IPAddressField(blank=True)
-    extra_data = models.TextField(blank=True, default='')
-    message = models.TextField(blank=True, default='')
-    token = models.CharField(max_length=36, blank=True, default='')
+        max_digits=9, decimal_places=2, default='0.0', verbose_name=_("delivery"))
+    tax = models.DecimalField(max_digits=9, decimal_places=2, default='0.0', verbose_name=_("tax"))
+    description = models.TextField(blank=True, default='', verbose_name=_("description"))
+    billing_first_name = models.CharField(max_length=256, blank=True, verbose_name=_("billing first name"))
+    billing_last_name = models.CharField(max_length=256, blank=True, verbose_name=_("billing last name"))
+    billing_address_1 = models.CharField(max_length=256, blank=True, verbose_name=_("billing address 1"))
+    billing_address_2 = models.CharField(max_length=256, blank=True, verbose_name=_("billing address 2"))
+    billing_city = models.CharField(max_length=256, blank=True, verbose_name=_("billing city"))
+    billing_postcode = models.CharField(max_length=256, blank=True, verbose_name=_("billing postcode"))
+    billing_country_code = models.CharField(max_length=2, blank=True, verbose_name=_("billing country code"))
+    billing_country_area = models.CharField(max_length=256, blank=True, verbose_name=_("billing country area"))
+    billing_email = models.EmailField(blank=True, verbose_name=_("billing email"))
+    customer_ip_address = models.IPAddressField(blank=True, verbose_name=_("customer ip address"))
+    extra_data = models.TextField(blank=True, default='', verbose_name=_("extra data"))
+    message = models.TextField(blank=True, default='', verbose_name=_("message"))
+    token = models.CharField(max_length=36, blank=True, default='', verbose_name=_("token"))
     captured_amount = models.DecimalField(
-        max_digits=9, decimal_places=2, default='0.0')
+        max_digits=9, decimal_places=2, default='0.0', verbose_name=_("captured amount"))
 
     class Meta:
         abstract = True

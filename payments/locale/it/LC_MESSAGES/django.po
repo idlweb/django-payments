@@ -1,0 +1,292 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-13 23:23+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: fields.py:18
+msgid "Please enter a valid card number"
+msgstr ""
+
+#: fields.py:19
+#, python-format
+msgid "We accept only %(valid_types)s"
+msgstr ""
+
+#: fields.py:78
+msgid "Month"
+msgstr ""
+
+#: fields.py:83
+msgid "Year"
+msgstr ""
+
+#: fields.py:120
+msgid "Enter a valid security number."
+msgstr ""
+
+#: forms.py:45
+msgid "Card Number"
+msgstr ""
+
+#: forms.py:49
+msgid "CVV2 Security Number"
+msgstr ""
+
+#: forms.py:50
+msgid ""
+"Last three digits located on the back of your card. For American Express the "
+"four digits found on the front side."
+msgstr ""
+
+#: forms.py:62
+msgid "Name on Credit Card"
+msgstr ""
+
+#: models.py:13
+msgid "Waiting for confirmation"
+msgstr "In attesa di conferma"
+
+#: models.py:14
+msgid "Pre-authorized"
+msgstr "Pre-autorizzato"
+
+#: models.py:15
+msgid "Confirmed"
+msgstr "Confermato"
+
+#: models.py:16 models.py:27
+msgid "Rejected"
+msgstr "Rifiutato"
+
+#: models.py:17
+msgid "Refunded"
+msgstr "Rimborsato"
+
+#: models.py:18
+msgid "Error"
+msgstr "Errore"
+
+#: models.py:19
+msgid "Input"
+msgstr ""
+
+#: models.py:25
+msgid "Unknown"
+msgstr "Sconosciuto"
+
+#: models.py:26
+msgid "Passed"
+msgstr "Passato"
+
+#: models.py:28
+msgid "Review"
+msgstr "Revisione"
+
+#: models.py:56
+msgid "variant"
+msgstr "modalità"
+
+#: models.py:59
+msgid "status"
+msgstr "stato"
+
+#: models.py:61
+msgid "fraud check"
+msgstr "controllo truffe"
+
+#: models.py:63
+msgid "fraud message"
+msgstr "messaggio truffa"
+
+#: models.py:69
+msgid "transaction id"
+msgstr "identificativo transazione"
+
+#: models.py:71
+msgid "currency"
+msgstr "valuta"
+
+#: models.py:73
+msgid "total"
+msgstr "totale"
+
+#: models.py:75
+msgid "delivery"
+msgstr ""
+
+#: models.py:76
+msgid "tax"
+msgstr "tasse"
+
+#: models.py:77
+msgid "description"
+msgstr "descrizione"
+
+#: models.py:78
+msgid "billing first name"
+msgstr ""
+
+#: models.py:79
+msgid "billing last name"
+msgstr ""
+
+#: models.py:80
+msgid "billing address 1"
+msgstr ""
+
+#: models.py:81
+msgid "billing address 2"
+msgstr ""
+
+#: models.py:82
+msgid "billing city"
+msgstr ""
+
+#: models.py:83
+msgid "billing postcode"
+msgstr ""
+
+#: models.py:84
+msgid "billing country code"
+msgstr ""
+
+#: models.py:85
+msgid "billing country area"
+msgstr ""
+
+#: models.py:86
+msgid "billing email"
+msgstr ""
+
+#: models.py:87
+msgid "customer ip address"
+msgstr "indirizzo ip cliente"
+
+#: models.py:88
+msgid "extra data"
+msgstr "informazioni aggiuntive"
+
+#: models.py:89
+msgid "message"
+msgstr "messaggio"
+
+#: models.py:90
+msgid "token"
+msgstr ""
+
+#: models.py:92
+msgid "captured amount"
+msgstr ""
+
+#: cybersource/__init__.py:91
+msgid "The order is marked for review by Decision Manager"
+msgstr ""
+
+#: cybersource/__init__.py:96
+msgid "The order has been rejected by Decision Manager"
+msgstr ""
+
+#: cybersource/__init__.py:101
+msgid "Fraud score exceeds threshold."
+msgstr ""
+
+#: cybersource/__init__.py:105
+msgid "CyberSource Smart Authorization failed."
+msgstr ""
+
+#: cybersource/__init__.py:110
+msgid "Card verification number (CVN) did not match."
+msgstr ""
+
+#: cybersource/__init__.py:116
+msgid "CyberSource Address Verification Service failed."
+msgstr ""
+
+#: cybersource/__init__.py:137
+msgid "3-D Secure verification in progress"
+msgstr ""
+
+#: cybersource/__init__.py:194
+msgid ""
+"Our bank has flagged your transaction as unusually suspicious. Please "
+"contact us to resolve this issue."
+msgstr ""
+
+#: cybersource/__init__.py:197
+msgid ""
+"Your bank has declined the transaction. No additional information was "
+"provided."
+msgstr ""
+
+#: cybersource/__init__.py:200
+msgid ""
+"The card has either expired or you have entered an incorrect expiration date."
+msgstr ""
+
+#: cybersource/__init__.py:203
+msgid ""
+"There are insufficient funds on your card or it has reached its credit limit."
+msgstr ""
+
+#: cybersource/__init__.py:206
+msgid "The card you are trying to use was reported as lost or stolen."
+msgstr ""
+
+#: cybersource/__init__.py:209
+msgid ""
+"Your card is either inactive or it does not permit online payments. Please "
+"contact your bank to resolve this issue."
+msgstr ""
+
+#: cybersource/__init__.py:212
+msgid ""
+"Your bank has declined the transaction. Please check the verification number "
+"of your card and retry."
+msgstr ""
+
+#: cybersource/__init__.py:215
+msgid ""
+"Your bank has declined the transaction. Please make sure the card number you "
+"have entered is correct and retry."
+msgstr ""
+
+#: cybersource/__init__.py:218
+msgid "We are sorry but our bank cannot handle the card type you are using."
+msgstr ""
+
+#: cybersource/__init__.py:222
+msgid ""
+"We were unable to verify your address. Please make sure the address you "
+"entered is correct and retry."
+msgstr ""
+
+#: cybersource/__init__.py:225
+msgid "We were unable to complete the transaction. Please try again later."
+msgstr ""
+
+#: cybersource/forms.py:51
+msgid "fingerprint"
+msgstr ""
+
+#: cybersource/forms.py:68
+msgid "This payment has already been processed."
+msgstr ""
+
+#: stripe/widgets.py:20
+msgid "Total payment"
+msgstr ""
